@@ -23,8 +23,6 @@ Code to generate the chart:
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Example of reading the CSV from a link (if available in CSV format)
-url = "https://data.worldbank.org/indicator/SP.POP.TOTL"
 data = pd.read_html(url)[0]
 
 # Check the first few rows of the data to understand its structure

@@ -1,0 +1,24 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Sample population data (replace with actual data from World Bank)
+data = {
+    "Age Group": ["0-14", "15-24", "25-54", "55-64", "65+"],
+    "Population (%)": [25.3, 16.2, 41.5, 8.4, 8.6]
+}
+
+# Convert to DataFrame
+df = pd.DataFrame(data)
+
+# Create a bar chart
+plt.figure(figsize=(8, 5))
+plt.bar(df["Age Group"], df["Population (%)"], color='skyblue')
+
+# Chart title and labels
+plt.title("Population Distribution by Age Group")
+plt.xlabel("Age Group")
+plt.ylabel("Population (%)")
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+
+# Show the plot
+plt.show()
